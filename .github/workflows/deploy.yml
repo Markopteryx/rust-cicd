@@ -32,8 +32,4 @@ jobs:
           targets: ${{ matrix.target }}
 
       - name: Build
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          use-cross: true
-          command: build
-          args: --verbose --release --target ${{ matrix.target }}
+        run: cargo build --verbose --release --target ${{ matrix.target }}
