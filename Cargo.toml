@@ -1,5 +1,5 @@
 [package]
-name = "rust-cidi"
+name = "rust-cicd"
 version = "0.1.0"
 edition = "2021"
 

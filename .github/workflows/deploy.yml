@@ -33,3 +33,6 @@ jobs:
 
       - name: Build
         run: cargo build --verbose --release --target ${{ matrix.target }}
+
+      - name: Run Tests
+        run: cargo test --verbose
