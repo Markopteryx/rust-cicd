@@ -50,7 +50,7 @@ jobs:
 
       - name: Run Tests
         run: cargo test --verbose
-ß
+
       - name: Get AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
