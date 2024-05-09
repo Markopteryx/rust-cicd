@@ -9,6 +9,9 @@ jobs:
   build-and-upload:
     name: Build and upload
     runs-on: ${{ matrix.os }}
+    permissions:
+      id-token: write
+      contents: read
 
     strategy:
       fail-fast: true
@@ -47,7 +50,7 @@ jobs:
 
       - name: Run Tests
         run: cargo test --verbose
-
+ß
       - name: Get AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
